@@ -48,7 +48,7 @@ namespace _1._2._12_form_
                 }
                 else throw new FormatException();
             }
-            catch 
+            catch
             {
                 MessageBox.Show("Введите цвета из списка!");
                 return false;
@@ -61,8 +61,8 @@ namespace _1._2._12_form_
             if (Write() && WriteColor())
             {
                 int colorName = Convert.ToInt32(inputColor.Text);
-                Diamond kindOfDiamond = new KindOfDiamond(diamond.Name, diamond.Weight, diamond.CutQuality, diamond.Cost(), colorName);
-                //diamond = kindOfDiamond;
+                KindOfDiamond kindOfDiamond = new KindOfDiamond(diamond.Name, diamond.Weight, diamond.CutQuality, diamond.Cost(), colorName);
+                diamond = kindOfDiamond;
                 priceOutput.Text = Convert.ToString(diamond.Cost());
             }
         }

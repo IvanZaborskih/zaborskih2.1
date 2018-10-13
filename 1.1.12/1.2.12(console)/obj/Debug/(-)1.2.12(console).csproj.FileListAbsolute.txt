@@ -1,0 +1,9 @@
+D:\2курс, 1атта\вторая попытка\1.1.12\1.2.12(console)\obj\Debug\(-)1.2.12(console).csprojResolveAssemblyReference.cache
+D:\2курс, 1атта\вторая попытка\1.1.12\1.2.12(console)\obj\Debug\(-)1.2.12(console).csproj.CoreCompileInputs.cache
+D:\2курс, 1атта\вторая попытка\1.1.12\1.2.12(console)\bin\Debug\1.2.12(console).exe.config
+D:\2курс, 1атта\вторая попытка\1.1.12\1.2.12(console)\bin\Debug\1.2.12(console).exe
+D:\2курс, 1атта\вторая попытка\1.1.12\1.2.12(console)\bin\Debug\1.2.12(console).pdb
+D:\2курс, 1атта\вторая попытка\1.1.12\1.2.12(console)\bin\Debug\MyLib.dll
+D:\2курс, 1атта\вторая попытка\1.1.12\1.2.12(console)\bin\Debug\MyLib.pdb
+D:\2курс, 1атта\вторая попытка\1.1.12\1.2.12(console)\obj\Debug\1.2.12(console).exe
+D:\2курс, 1атта\вторая попытка\1.1.12\1.2.12(console)\obj\Debug\1.2.12(console).pdb

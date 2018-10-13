@@ -1,0 +1,12 @@
+D:\2курс, 1атта\вторая попытка\1.1.12\1.2.12(form)\bin\Debug\1.2.12(form).exe.config
+D:\2курс, 1атта\вторая попытка\1.1.12\1.2.12(form)\bin\Debug\1.2.12(form).exe
+D:\2курс, 1атта\вторая попытка\1.1.12\1.2.12(form)\bin\Debug\1.2.12(form).pdb
+D:\2курс, 1атта\вторая попытка\1.1.12\1.2.12(form)\bin\Debug\MyLib.dll
+D:\2курс, 1атта\вторая попытка\1.1.12\1.2.12(form)\bin\Debug\MyLib.pdb
+D:\2курс, 1атта\вторая попытка\1.1.12\1.2.12(form)\obj\Debug\2.1.12(form) (-).csprojResolveAssemblyReference.cache
+D:\2курс, 1атта\вторая попытка\1.1.12\1.2.12(form)\obj\Debug\_1._2._12_form_.Form1.resources
+D:\2курс, 1атта\вторая попытка\1.1.12\1.2.12(form)\obj\Debug\_1._2._12_form_.Properties.Resources.resources
+D:\2курс, 1атта\вторая попытка\1.1.12\1.2.12(form)\obj\Debug\2.1.12(form) (-).csproj.GenerateResource.Cache
+D:\2курс, 1атта\вторая попытка\1.1.12\1.2.12(form)\obj\Debug\2.1.12(form) (-).csproj.CoreCompileInputs.cache
+D:\2курс, 1атта\вторая попытка\1.1.12\1.2.12(form)\obj\Debug\1.2.12(form).exe
+D:\2курс, 1атта\вторая попытка\1.1.12\1.2.12(form)\obj\Debug\1.2.12(form).pdb

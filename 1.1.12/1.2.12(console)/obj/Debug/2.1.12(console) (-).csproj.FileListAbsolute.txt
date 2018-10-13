@@ -6,3 +6,12 @@ D:\2курс, 1атта\вторая попытка\1.1.12\1.2.12(console)\bin\D
 D:\2курс, 1атта\вторая попытка\1.1.12\1.2.12(console)\obj\Debug\2.1.12(console) (-).csproj.CoreCompileInputs.cache
 D:\2курс, 1атта\вторая попытка\1.1.12\1.2.12(console)\obj\Debug\1.2.12(console).exe
 D:\2курс, 1атта\вторая попытка\1.1.12\1.2.12(console)\obj\Debug\1.2.12(console).pdb
+D:\Репозитории\zaborskih2.1\1.1.12\1.2.12(console)\bin\Debug\1.2.12(console).exe.config
+D:\Репозитории\zaborskih2.1\1.1.12\1.2.12(console)\bin\Debug\1.2.12(console).exe
+D:\Репозитории\zaborskih2.1\1.1.12\1.2.12(console)\bin\Debug\1.2.12(console).pdb
+D:\Репозитории\zaborskih2.1\1.1.12\1.2.12(console)\bin\Debug\MyLib.dll
+D:\Репозитории\zaborskih2.1\1.1.12\1.2.12(console)\bin\Debug\MyLib.pdb
+D:\Репозитории\zaborskih2.1\1.1.12\1.2.12(console)\obj\Debug\2.1.12(console) (-).csprojResolveAssemblyReference.cache
+D:\Репозитории\zaborskih2.1\1.1.12\1.2.12(console)\obj\Debug\2.1.12(console) (-).csproj.CoreCompileInputs.cache
+D:\Репозитории\zaborskih2.1\1.1.12\1.2.12(console)\obj\Debug\1.2.12(console).exe
+D:\Репозитории\zaborskih2.1\1.1.12\1.2.12(console)\obj\Debug\1.2.12(console).pdb

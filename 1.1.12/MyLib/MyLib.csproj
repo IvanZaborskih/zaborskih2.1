@@ -44,6 +44,7 @@
     <Compile Include="1.1.12\Number.cs" />
     <Compile Include="1.1.12\Operation.cs" />
     <Compile Include="2.1.12\Diamond.cs" />
+    <Compile Include="2.1.12\KindOfDiamond.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

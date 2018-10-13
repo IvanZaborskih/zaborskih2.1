@@ -1,6 +1,6 @@
 ﻿namespace _1._2._12_form_
 {
-    partial class Form1
+    partial class DiamondForm
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -142,7 +142,7 @@
             this.label6.Text = "Введите конкретный цвет алмаза из списка:\r\n- Голубой \r\n- Желтый \r\n- Красный \r\n- Б" +
     "елый";
             // 
-            // Form1
+            // DiamondForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -159,8 +159,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.inputName);
             this.Controls.Add(this.getPriceButton);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "DiamondForm";
+            this.Text = "DiamondForm";
             this.ResumeLayout(false);
             this.PerformLayout();
 

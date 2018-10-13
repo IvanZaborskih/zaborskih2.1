@@ -11,9 +11,9 @@ using MyLib._2._1._12;
 
 namespace _1._2._12_form_
 {
-    public partial class Form1 : Form
+    public partial class DiamondForm : Form
     {
-        public Form1()
+        public DiamondForm()
         {
             InitializeComponent();
         }
@@ -35,6 +35,14 @@ namespace _1._2._12_form_
                 MessageBox.Show("Проверьте правильность введенных данных!");
                 return false;
             }
+        }
+
+        enum Color
+        {
+            Blue,
+            Yellow,
+            Red,
+            White
         }
 
         public bool WriteColor()

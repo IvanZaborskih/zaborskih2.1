@@ -16,7 +16,7 @@ namespace _1._2._12_form_
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new DiamondForm());
         }
     }
 }

@@ -11,50 +11,39 @@ namespace _1._2._12_console_
     {
         static double Input()
         {
-            bool b;
-            double value = 0;
-            do
+            int a;
+            while (!int.TryParse(Console.ReadLine(), out a))
             {
-                try
-                {
-                    value = Convert.ToDouble(Console.ReadLine());
-                    b = true;
-                }
-                catch
-                {
-                    Console.WriteLine("Введите число!");
-                    b = false;
-                }
-            } while (b == false);
-            return value;
+                Console.WriteLine("Введите число!");
+            }
+            return a;
+            //bool b;
+            //double value = 0;
+            //do
+            //{
+            //    try
+            //    {
+            //        value = Convert.ToDouble(Console.ReadLine());
+            //        b = true;
+            //    }
+            //    catch
+            //    {
+            //        Console.WriteLine("Введите число!");
+            //        b = false;
+            //    }
+            //} while (b == false);
+            //return value;
         }
 
-        static string InputColor()
+        static int InputColor()
         {
-            bool b;
-            string color = "";
-            do
+            Console.Write("Ваш цвет: ");
+            int a;
+            while (!int.TryParse(Console.ReadLine(), out a) || a > 4)
             {
-                try
-                {
-                    color = Convert.ToString(Console.ReadLine());
-                    if (color == "Голубой" || color == "Желтый" || color == "Красный" || color == "Белый")
-                    {
-                        b = true;
-                    }
-                    else
-                    {
-                        Console.WriteLine("Введите цвет из списка!");
-                        b = false;
-                    }
-                }
-                catch
-                {
-                    Console.WriteLine("Введите правильный цвет");
-                    b = false;
-                }
-            } while (b == false);
-            return color;
+                Console.WriteLine("Выберите цвет из списка!");
+            }
+            return a;
         }
 
         static void Main(string[] args)
@@ -70,11 +59,10 @@ namespace _1._2._12_console_
                 Console.WriteLine("Введите качество огранки в баллах:");
                 diamond.CutQuality = Input();
 
-                Console.WriteLine("Введите конкретный цвет алмаза из списка - \n- Голубой \n- Желтый \n- Красный \n- Белый");
-                Console.Write("Ваш цвет: ");
-                string colorName = InputColor();
+                Console.WriteLine("Выберите цвет алмаза из списка - \n1) Голубой \n2) Желтый \n3) Красный \n4) Белый");
+                int colorNumber = InputColor();
 
-                KindOfDiamond kindOfDiamond = new KindOfDiamond(diamond.Name, diamond.Weight, diamond.CutQuality, diamond.Cost(), colorName);
+                KindOfDiamond kindOfDiamond = new KindOfDiamond(diamond.Name, diamond.Weight, diamond.CutQuality, diamond.Cost(), colorNumber);
                 diamond = kindOfDiamond;
 
                 Console.WriteLine("Цена = " + diamond.Cost());

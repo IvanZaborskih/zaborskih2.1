@@ -61,10 +61,9 @@ namespace _1._2._12_form_
             if (Write() && WriteColor())
             {
                 int colorName = Convert.ToInt32(inputColor.Text);
-                KindOfDiamond kindOfDiamond = new KindOfDiamond(diamond.Name, diamond.Weight, diamond.CutQuality, diamond.Cost(), colorName);
-                diamond = kindOfDiamond;
+                Diamond kindOfDiamond = new KindOfDiamond(diamond.Name, diamond.Weight, diamond.CutQuality, diamond.Cost(), colorName);
+                //diamond = kindOfDiamond;
                 priceOutput.Text = Convert.ToString(diamond.Cost());
-                
             }
         }
     }

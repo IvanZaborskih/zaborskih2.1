@@ -17,22 +17,6 @@ namespace _1._2._12_console_
                 Console.WriteLine("Введите число!");
             }
             return a;
-            //bool b;
-            //double value = 0;
-            //do
-            //{
-            //    try
-            //    {
-            //        value = Convert.ToDouble(Console.ReadLine());
-            //        b = true;
-            //    }
-            //    catch
-            //    {
-            //        Console.WriteLine("Введите число!");
-            //        b = false;
-            //    }
-            //} while (b == false);
-            //return value;
         }
 
         static int InputColor()

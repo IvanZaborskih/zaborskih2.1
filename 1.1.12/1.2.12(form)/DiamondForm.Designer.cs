@@ -113,7 +113,7 @@
             // 
             this.inputColor.Location = new System.Drawing.Point(12, 260);
             this.inputColor.Name = "inputColor";
-            this.inputColor.Size = new System.Drawing.Size(100, 22);
+            this.inputColor.Size = new System.Drawing.Size(38, 22);
             this.inputColor.TabIndex = 8;
             // 
             // label5
@@ -135,11 +135,11 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(118, 260);
+            this.label6.Location = new System.Drawing.Point(56, 260);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(304, 85);
+            this.label6.Size = new System.Drawing.Size(274, 85);
             this.label6.TabIndex = 11;
-            this.label6.Text = "Введите конкретный цвет алмаза из списка:\r\n- Голубой \r\n- Желтый \r\n- Красный \r\n- Б" +
+            this.label6.Text = "Введите номер цвета алмаза из списка:\r\n1) Голубой \r\n2) Желтый \r\n3) Красный \r\n4) Б" +
     "елый";
             // 
             // DiamondForm

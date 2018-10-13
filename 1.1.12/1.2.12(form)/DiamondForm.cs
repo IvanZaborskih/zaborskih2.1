@@ -30,33 +30,25 @@ namespace _1._2._12_form_
                 diamond.CutQuality = Convert.ToDouble(inputCutQuality.Text);
                 return true;
             }
-            catch (Exception e)
+            catch
             {
                 MessageBox.Show("Проверьте правильность введенных данных!");
                 return false;
             }
         }
 
-        enum Color
-        {
-            Blue,
-            Yellow,
-            Red,
-            White
-        }
-
         public bool WriteColor()
         {
             try
             {
-                string colorName = inputColor.Text;
-                if (colorName == "Голубой" || colorName == "Желтый" || colorName == "Красный" || colorName == "Белый")
+                int colorName = Convert.ToInt32(inputColor.Text);
+                if (colorName > 0 && colorName < 5)
                 {
                     return true;
                 }
                 else throw new FormatException();
             }
-            catch (Exception e)
+            catch 
             {
                 MessageBox.Show("Введите цвета из списка!");
                 return false;
@@ -68,7 +60,7 @@ namespace _1._2._12_form_
             diamond = new Diamond();
             if (Write() && WriteColor())
             {
-                string colorName = inputColor.Text;
+                int colorName = Convert.ToInt32(inputColor.Text);
                 KindOfDiamond kindOfDiamond = new KindOfDiamond(diamond.Name, diamond.Weight, diamond.CutQuality, diamond.Cost(), colorName);
                 diamond = kindOfDiamond;
                 priceOutput.Text = Convert.ToString(diamond.Cost());

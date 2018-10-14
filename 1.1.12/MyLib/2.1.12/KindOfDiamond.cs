@@ -8,9 +8,9 @@ namespace MyLib._2._1._12
 {
     public class KindOfDiamond : Diamond
     {
-        public int Color { get; set; }
+        public ColorNum Color { get; set; }
 
-        public KindOfDiamond(string name, double weight, double cutQuality, double price, int color)
+        public KindOfDiamond(string name, double weight, double cutQuality, double price, ColorNum color)
         {
             Name = name;
             Weight = weight;
@@ -21,16 +21,25 @@ namespace MyLib._2._1._12
 
         public override double Cost()
         {
-            if (Color == 1)
+            if (Color == ColorNum.Blue)
             {
                 return Price = (0.4 * Weight + 0.6 * CutQuality) + 1;
             }
-            else if (Color == 2)
+            else if (Color == ColorNum.Yellow)
             {
                 return Price = (0.4 * Weight + 0.6 * CutQuality) - 0.5;
             }
             else
                 return Price;
         }
+    }
+
+    public enum ColorNum
+    {
+        Blue,
+        Yellow,
+        Red,
+        White,
+        None
     }
 }

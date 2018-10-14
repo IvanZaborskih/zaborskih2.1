@@ -30,6 +30,15 @@ namespace _1._2._12_console_
             return a;
         }
 
+        //enum ColorNum
+        //{
+        //    Blue,
+        //    Yellow,
+        //    Red,
+        //    White,
+        //    None
+        //}
+
         static void Main(string[] args)
         {
             string check = "";
@@ -45,8 +54,19 @@ namespace _1._2._12_console_
 
                 Console.WriteLine("Выберите цвет алмаза из списка - \n1) Голубой \n2) Желтый \n3) Красный \n4) Белый");
                 int colorNumber = InputColor();
+                ColorNum color = new ColorNum();
+                if (colorNumber == 1)
+                {
+                    color = ColorNum.Blue;
+                }
+                else if (colorNumber == 2)
+                {
+                    color = ColorNum.Yellow;
+                }
+                else
+                    color = ColorNum.None;
 
-                KindOfDiamond kindOfDiamond = new KindOfDiamond(diamond.Name, diamond.Weight, diamond.CutQuality, diamond.Cost(), colorNumber);
+                KindOfDiamond kindOfDiamond = new KindOfDiamond(diamond.Name, diamond.Weight, diamond.CutQuality, diamond.Cost(), color);
                 diamond = kindOfDiamond;
 
                 Console.WriteLine("Цена = " + diamond.Cost());

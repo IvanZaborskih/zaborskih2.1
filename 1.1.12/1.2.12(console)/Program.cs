@@ -23,7 +23,7 @@ namespace _1._2._12_console_
         {
             Console.Write("Ваш цвет: ");
             int a;
-            while (!int.TryParse(Console.ReadLine(), out a) || a > 4)
+            while (!int.TryParse(Console.ReadLine(), out a) || a > 4 || a < 1)
             {
                 Console.WriteLine("Выберите цвет из списка!");
             }

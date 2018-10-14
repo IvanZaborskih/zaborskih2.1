@@ -127,8 +127,10 @@
             // 
             // priceOutput
             // 
+            this.priceOutput.BackColor = System.Drawing.SystemColors.Window;
             this.priceOutput.Location = new System.Drawing.Point(509, 138);
             this.priceOutput.Name = "priceOutput";
+            this.priceOutput.ReadOnly = true;
             this.priceOutput.Size = new System.Drawing.Size(100, 22);
             this.priceOutput.TabIndex = 10;
             // 

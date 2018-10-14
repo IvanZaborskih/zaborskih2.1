@@ -30,15 +30,6 @@ namespace _1._2._12_console_
             return a;
         }
 
-        //enum ColorNum
-        //{
-        //    Blue,
-        //    Yellow,
-        //    Red,
-        //    White,
-        //    None
-        //}
-
         static void Main(string[] args)
         {
             string check = "";
@@ -66,8 +57,7 @@ namespace _1._2._12_console_
                 else
                     color = ColorNum.None;
 
-                KindOfDiamond kindOfDiamond = new KindOfDiamond(diamond.Name, diamond.Weight, diamond.CutQuality, diamond.Cost(), color);
-                diamond = kindOfDiamond;
+                diamond = new KindOfDiamond(diamond.Name, diamond.Weight, diamond.CutQuality, diamond.Cost(), color);
 
                 Console.WriteLine("Цена = " + diamond.Cost());
 

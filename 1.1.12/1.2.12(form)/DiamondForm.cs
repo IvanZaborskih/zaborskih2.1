@@ -22,37 +22,24 @@ namespace _1._2._12_form_
 
         public bool Write()
         {
-            try
-            {
-                diamond = new Diamond();
-                diamond.Name = inputName.Text;
-                diamond.Weight = Convert.ToDouble(inputWeight.Text);
-                diamond.CutQuality = Convert.ToDouble(inputCutQuality.Text);
-                return true;
-            }
-            catch
+            double a;
+            while (!double.TryParse(inputWeight.Text, out a) || !double.TryParse(inputCutQuality.Text, out a) || inputName.Text == "")
             {
                 MessageBox.Show("Проверьте правильность введенных данных!");
                 return false;
             }
+            return true;
         }
 
         public bool WriteColor()
         {
-            try
-            {
-                int colorName = Convert.ToInt32(inputColor.Text);
-                if (colorName > 0 && colorName < 5)
-                {
-                    return true;
-                }
-                else throw new FormatException();
-            }
-            catch
+            int a;
+            while (!int.TryParse(inputColor.Text, out a) || a > 4 || a < 1)
             {
                 MessageBox.Show("Введите цвета из списка!");
                 return false;
             }
+            return true;
         }
 
         public void getPriceButton_Click(object sender, EventArgs e)
@@ -60,7 +47,11 @@ namespace _1._2._12_form_
             diamond = new Diamond();
             if (Write() && WriteColor())
             {
+                diamond.Name = inputName.Text;
+                diamond.Weight = Convert.ToDouble(inputWeight.Text);
+                diamond.CutQuality = Convert.ToDouble(inputCutQuality.Text);
                 int colorNumber = Convert.ToInt32(inputColor.Text);
+
                 ColorNum color = new ColorNum();
                 if (colorNumber == 1)
                 {
@@ -72,8 +63,7 @@ namespace _1._2._12_form_
                 }
                 else
                     color = ColorNum.None;
-                KindOfDiamond kindOfDiamond = new KindOfDiamond(diamond.Name, diamond.Weight, diamond.CutQuality, diamond.Cost(), color);
-                diamond = kindOfDiamond;
+                diamond = new KindOfDiamond(diamond.Name, diamond.Weight, diamond.CutQuality, diamond.Cost(), color);
                 priceOutput.Text = Convert.ToString(diamond.Cost());
             }
         }

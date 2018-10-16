@@ -23,7 +23,9 @@ namespace _1._2._12_form_
         public bool Write()
         {
             double a;
-            while (!double.TryParse(inputWeight.Text, out a) || !double.TryParse(inputCutQuality.Text, out a) || inputName.Text == "")
+            double b;
+            while (!double.TryParse(inputWeight.Text.Replace(".", ","), out a) 
+                || !double.TryParse(inputCutQuality.Text.Replace(".", ","), out b) || inputName.Text == ""  || a <= 0 || b <= 0)
             {
                 MessageBox.Show("Проверьте правильность введенных данных!");
                 return false;
@@ -48,8 +50,8 @@ namespace _1._2._12_form_
             if (Write() && WriteColor())
             {
                 diamond.Name = inputName.Text;
-                diamond.Weight = Convert.ToDouble(inputWeight.Text);
-                diamond.CutQuality = Convert.ToDouble(inputCutQuality.Text);
+                diamond.Weight = Convert.ToDouble(inputWeight.Text.Replace(".", ","));
+                diamond.CutQuality = Convert.ToDouble(inputCutQuality.Text.Replace(".", ","));
                 int colorNumber = Convert.ToInt32(inputColor.Text);
 
                 ColorNum color = new ColorNum();
@@ -62,7 +64,9 @@ namespace _1._2._12_form_
                     color = ColorNum.Yellow;
                 }
                 else
+                {
                     color = ColorNum.None;
+                }
                 diamond = new KindOfDiamond(diamond.Name, diamond.Weight, diamond.CutQuality, diamond.Cost(), color);
                 priceOutput.Text = Convert.ToString(diamond.Cost());
             }

@@ -11,10 +11,10 @@ namespace _1._2._12_console_
     {
         static double Input()
         {
-            int a;
-            while (!int.TryParse(Console.ReadLine(), out a))
+            double a;
+            while (!double.TryParse(Console.ReadLine().Replace('.', ','), out a) || a <= 0)
             {
-                Console.WriteLine("Введите число!");
+                Console.WriteLine("Введите число больше нуля!");
             }
             return a;
         }

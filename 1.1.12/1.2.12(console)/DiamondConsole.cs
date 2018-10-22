@@ -7,7 +7,7 @@ using MyLib._2._1._12;
 
 namespace _1._2._12_console_
 {
-    class Program
+    class DiamondConsole
     {
         static double Input()
         {
@@ -55,12 +55,11 @@ namespace _1._2._12_console_
                     color = ColorNum.Yellow;
                 }
                 else
+                {
                     color = ColorNum.None;
-
+                }
                 diamond = new KindOfDiamond(diamond.Name, diamond.Weight, diamond.CutQuality, diamond.Cost(), color);
-
                 Console.WriteLine("Цена = " + diamond.Cost());
-
                 Console.WriteLine();
                 Console.WriteLine("Если хотите продолжить, введите 0, если хотите завершить работу, нажмите любую кнопку");
                 check = Convert.ToString(Console.ReadLine());

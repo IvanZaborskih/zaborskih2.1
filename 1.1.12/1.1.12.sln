@@ -9,9 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.1.12(form) (+)", "1.1.12(
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyLib", "MyLib\MyLib.csproj", "{DBC494DA-B07B-4F9D-B73A-6ECA6916E722}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.1.12(console) (-)", "1.2.12(console)\2.1.12(console) (-).csproj", "{EC3E4DF9-2355-4A5C-B164-C4BD4373506F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.1.12(console) (+)", "1.2.12(console)\2.1.12(console) (+).csproj", "{EC3E4DF9-2355-4A5C-B164-C4BD4373506F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.1.12(form) (-)", "1.2.12(form)\2.1.12(form) (-).csproj", "{0653156A-850A-435C-9C3A-D89E43A84764}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.1.12(form) (+)", "1.2.12(form)\2.1.12(form) (+).csproj", "{0653156A-850A-435C-9C3A-D89E43A84764}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
